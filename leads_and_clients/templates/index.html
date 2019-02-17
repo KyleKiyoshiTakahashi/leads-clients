@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Customers and Leads</title>
+</head>
+<body>
+<h3>List of All Customers and # of Leads</h3>
+<table>
+	{% for i in range(lnth) %}
+	<tr>
+		<th>Customer Name</th>
+		<th>Number of Leads</th>
+	</tr>
+	<tr>
+		<td>{{customers[i]['name']}}</td>
+		<td>{{customers[i]['number_of_leads']}}</td>
+	</tr>
+	{% endfor %}
+</table>
+</body>
+</html>
